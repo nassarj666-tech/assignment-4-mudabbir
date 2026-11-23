@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventPass - Event Booking</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-7.3.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <div class="elite">
+          <a href="#home">EventPass</a>
+        </div>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#events">Events</a></li>
+          <li><a class="nav-link" href="#booking">Book Seat</a></li>
+          <li><a class="nav-link" href="#admin">Admin</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- HOME -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="h-title">
+          <h1>Book Your Next Event</h1>
+          <p>
+            Discover live concerts, tech conferences, and workshops near you.
+            Reserve your spot or pick your seat easily.
+          </p>
+        </div>
+<!-- FORM HOME -->
+        <form class="h-form" action="#events">
+          <div class="form-row-top">
+            <div class="form-group">
+              <label for="eventSearch">Event or City</label>
+              <div class="input-icon-wrap">
+                <i class="fa-solid fa-location-dot"></i>
+                <input
+                  id="eventSearch"
+                  class="form-control"
+                  type="text"
+                  placeholder="Search event, venue, or city"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="eventCategory">Category</label>
+              <select id="eventCategory" class="form-select">
+                <option value="">All Categories</option>
+                <option value="conference">Conference</option>
+                <option value="workshop">Workshop</option>
+                <option value="concert">Concert</option>
+                <option value="meetup">Meetup</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="eventDate">Date</label>
+              <input id="eventDate" class="form-control" type="date" />
+            </div>
+          </div>
+
+          <div class="form-row-bottom">
+            <div class="form-group">
+              <label for="guestsCount">Seats Needed</label>
+              <select id="guestsCount" class="form-select">
+                <option value="1">1 Seat</option>
+                <option value="2">2 Seats</option>
+                <option value="3">3 Seats</option>
+                <option value="4">4+ Seats</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="maxPrice">Max Ticket Price</label>
+              <select id="maxPrice" class="form-select">
+                <option value="">Any Price</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+                <option value="250">$250</option>
+              </select>
+            </div>
+
+            <div class="form-group form-btn-wrap">
+              <button type="submit" class="btn2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Find Events
+              </button>
+            </div>
+          </div>
+        </form>
+<!-- LAST LINE IN HOME PAGE -->
+        <div class="line-home">
+          <div class="stat-item">
+            <h5>120+</h5>
+            <p>Monthly Events</p>
+          </div>
+          <div class="stat-item">
+            <h5>45,000+</h5>
+            <p>Booked Seats</p>
+          </div>
+          <div class="stat-item">
+            <h5>35+</h5>
+            <p>Partner Venues</p>
+          </div>
+          <div class="stat-item">
+            <h5>99%</h5>
+            <p>Check-in Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- EVENTS -->
+ <!--title events -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <div class="title">
+          <div class="title1"><h2>Upcoming Lineup</h2></div>
+          <div class="title2">
+            <h2>Featured <span>Events</span></h2>
+            <p>
+              Pick an event, check available seats, and complete your booking
+            </p>
+          </div>
+        </div>
+<!-- card1 -->
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="card-img-wrap">
+              <img
+                src="./image/event-head.jpg"
+                class="main-img"
+                alt="Cairo Tech Summit"
+              />
+            </div>
+            <div class="card-body">
+              <div class="price-row">
+                <h5 class="t-card">$85</h5>
+                <span class="l2-text">Dec 12, 2026 &bull; 10:00 AM</span>
+              </div>
+              <p class="l3-text">
+                Tech Conference &bull; Main Hall &bull; VIP &amp; Standard
+              </p>
+              <div class="card-text">
+                <p class="modern">Cairo Tech &amp; Web Summit</p>
+                <span class="last-line">
+                  Smart Village Convention Center, Giza
+                </span>
+              </div>
+              <div class="card-footer-row">
+                <div class="avatar1">
+                  <img src="./image/card3.avif" alt="Omar Hassan" />
+                  <span>Omar Hassan</span>
+                </div>
+                <a href="#booking" class="btn-card">Book Now</a>
+              </div>
+            </div>
+          </div>
+<!-- card2 -->
+          <div class="event-card">
+            <div class="card-img-wrap">
+              <img
+                src="./image/event2.jpg"
+                class="main-img"
+                alt="UI UX Design Workshop"
+              />
+            </div>
+            <div class="card-body">
+              <div class="price-row">
+                <h5 class="t-card">$45</h5>
+                <span class="l2-text">Dec 18, 2026 &bull; 2:00 PM</span>
+              </div>
+              <p class="l3-text">Workshop &bull; Lab B &bull; Hands-on</p>
+              <div class="card-text">
+                <p class="modern">Modern UI &amp; Layout Workshop</p>
+                <span class="last-line">Maadi Creative Hub, Cairo</span>
+              </div>
+              <div class="card-footer-row">
+                <div class="avatar1">
+                  <img src="./image/review1.jpg" alt="Nadia Adel" />
+                  <span>Nadia Adel</span>
+                </div>
+                <a href="#booking" class="btn-card">Book Now</a>
+              </div>
+            </div>
+          </div>
+<!-- card3 -->
+          <div class="event-card">
+            <div class="card-img-wrap">
+              <img
+                src="./image/event3.jpg"
+                class="main-img"
+                alt="Acoustic Night Live"
+              />
+              <span class="badge-photos">
+                <i class="fa-solid fa-chair"></i> 29 Seats Left
+              </span>
+              <span class="icon-heart"><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="card-body">
+              <div class="price-row">
+                <h5 class="t-card">$60</h5>
+                <span class="l2-text">Dec 24, 2026 &bull; 8:00 PM</span>
+              </div>
+              <p class="l3-text">Live Night &bull; Theater &bull; Seated</p>
+              <div class="card-text">
+                <p class="modern">Winter Acoustic &amp; Indie Night</p>
+                <span class="last-line">Zamalek Cultural Hall, Cairo</span>
+              </div>
+              <div class="card-footer-row">
+                <div class="avatar1">
+                  <img src="./image/david.jpg" alt="Karim Mansour" />
+                  <span>Karim Mansour</span>
+                </div>
+                <a href="#booking" class="btn-card">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-all-wrap">
+          <a href="#booking" class="btn2">
+            Reserve Seats <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- BOOK SEAT -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="title">
+          <div class="title1"><h2>Seat Selection &amp; Calculator</h2></div>
+          <div class="title2">
+            <h2>Reserve <span> Your Spot</span></h2>
+            <p>Seat layout preview, ticket calculator, and booking form</p>
+          </div>
+        </div>
+
+        <div class="booking-grid">
+          <div class="seats-box">
+            <h3>Seats Layout</h3>
+            <p class="seats-sub">Stage / Speaker Front</p>
+            <div class="stage-bar">STAGE</div>
+
+            <div class="seats-grid">
+              <span class="seat booked">A1</span>
+              <span class="seat booked">A2</span>
+              <span class="seat selected">A3</span>
+              <span class="seat selected">A4</span>
+              <span class="seat available">A5</span>
+              <span class="seat available">A6</span>
+              <span class="seat available">B1</span>
+              <span class="seat booked">B2</span>
+              <span class="seat available">B3</span>
+              <span class="seat available">B4</span>
+              <span class="seat available">B5</span>
+              <span class="seat available">B6</span>
+            </div>
+
+            <div class="seat-legend">
+              <span><i class="legend-dot dot-available"></i> Available</span>
+              <span><i class="legend-dot dot-selected"></i> Selected</span>
+              <span><i class="legend-dot dot-booked"></i> Booked</span>
+            </div>
+<!-- calculator -->
+            <div class="calc-box">
+              <h3>Ticket &amp; Price Calculator</h3>
+              <div class="calc-screen">
+                <span class="calc-label">Total</span>
+                <span class="calc-value">$170</span>
+              </div>
+              <div class="calc-keys">
+                <button type="button" class="calc-btn calc-op">C</button>
+                <button type="button" class="calc-btn calc-op">/</button>
+                <button type="button" class="calc-btn calc-op">*</button>
+                <button type="button" class="calc-btn calc-op">-</button>
+
+                <button type="button" class="calc-btn">7</button>
+                <button type="button" class="calc-btn">8</button>
+                <button type="button" class="calc-btn">9</button>
+                <button type="button" class="calc-btn calc-op">+</button>
+
+                <button type="button" class="calc-btn">4</button>
+                <button type="button" class="calc-btn">5</button>
+                <button type="button" class="calc-btn">6</button>
+                <button type="button" class="calc-btn calc-eq">=</button>
+
+                <button type="button" class="calc-btn">1</button>
+                <button type="button" class="calc-btn">2</button>
+                <button type="button" class="calc-btn">3</button>
+                <button type="button" class="calc-btn">.</button>
+
+                <button type="button" class="calc-btn calc-zero">0</button>
+              </div>
+            </div>
+          </div>
+<!-- BOOKING FORM -->
+          <form class="booking-form">
+            <h3>Booking Details</h3>
+            <div class="form-group">
+              <label for="selectedEvent">Event</label>
+              <select id="selectedEvent" class="form-select">
+                <option value="summit">
+                  Cairo Tech &amp; Web Summit ($85)
+                </option>
+                <option value="workshop">
+                  Modern UI &amp; Layout Workshop ($45)
+                </option>
+                <option value="concert">
+                  Winter Acoustic &amp; Indie Night ($60)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="attendeeName">Full Name</label>
+              <input
+                id="attendeeName"
+                type="text"
+                class="form-control"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="attendeeEmail">Email Address</label>
+              <input
+                id="attendeeEmail"
+                type="email"
+                class="form-control"
+                placeholder="name@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="seatCode">Selected Seats</label>
+              <input
+                id="seatCode"
+                type="text"
+                class="form-control"
+                value="A3, A4"
+              />
+            </div>
+
+            <button type="submit" class="btn2 full-btn">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- Seats -->
+ <!-- seats title -->
+    <section class="admin-section" id="admin">
+      <div class="container">
+        <div class="title">
+          <div class="title1"><h2>Admin View</h2></div>
+          <div class="title2">
+            <h2>Bookings <span>Overview</span></h2>
+            <p>View current event reservations at a glance</p>
+          </div>
+        </div>
+<!-- seats content -->
+        <div class="table-wrap">
+          <table class="bookings-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Attendee</th>
+                <th>Event</th>
+                <th>Seats</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#BK-101</td>
+                <td>Salma Ibrahim</td>
+                <td>Cairo Tech &amp; Web Summit</td>
+                <td>A3, A4</td>
+                <td>
+                  <span class="status-pill status-confirmed">Confirmed</span>
+                </td>
+              </tr>
+              <tr>
+                <td>#BK-102</td>
+                <td>Youssef Kamal</td>
+                <td>Modern UI &amp; Layout Workshop</td>
+                <td>B1</td>
+                <td>
+                  <span class="status-pill status-pending">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>#BK-103</td>
+                <td>Mona Samir</td>
+                <td>Winter Acoustic &amp; Indie Night</td>
+                <td>A5, A6</td>
+                <td>
+                  <span class="status-pill status-confirmed">Confirmed</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+<!--Contact with us  -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="title">
+          <div class="title1"><h2>Contact Us</h2></div>
+          <div class="title2">
+            <h2>Get In <span>Touch</span></h2>
+            <p>
+              Have a question about tickets, group seats, or hosting an event?
+            </p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card1">
+            <div class="icon1"><i class="fa-solid fa-phone"></i></div>
+            <h6>Call Us</h6>
+            <p>Mon-Fri from 9am to 6pm</p>
+            <span>+20 2 5550 1234</span>
+          </div>
+
+          <div class="card2">
+            <div class="icon2"><i class="fa-solid fa-envelope"></i></div>
+            <h6>Email Us</h6>
+            <p>We reply within 24 hours</p>
+            <span>support@eventpass.com</span>
+          </div>
+
+          <div class="card3">
+            <div class="icon3"><i class="fa-solid fa-location-dot"></i></div>
+            <h6>Visit Us</h6>
+            <p>Box office &amp; support</p>
+            <span>Maadi, Cairo</span>
+          </div>
+
+          <div class="card4">
+            <div class="icon4"><i class="fa-solid fa-comments"></i></div>
+            <h6>Live Help</h6>
+            <p>Ticket &amp; seat assistance</p>
+            <span>Chat with support &rarr;</span>
+          </div>
+        </div>
+    </section>
+  </body>
+</html>
